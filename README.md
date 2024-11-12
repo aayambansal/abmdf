@@ -47,14 +47,14 @@ abdmf/
 ├── requirements.txt
 ├── setup.py
 └── README.md
-```bash
+```
 
 
 ## Installation
 
-```
-pip install abdmf
 ```bash
+pip install abdmf
+```
 
 ## Quick Start
 
