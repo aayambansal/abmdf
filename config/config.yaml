@@ -1,0 +1,62 @@
+# ABDMF Configuration Template
+
+bias_detector:
+  protected_attributes:
+    - gender
+    - race
+    - age
+    - education_type
+    - career_change
+    - disability_status
+    - location
+  threshold: 0.2
+  minimum_sample_size: 100
+
+decision_analyzer:
+  model_params:
+    n_estimators: 100
+    max_depth: null
+    min_samples_split: 2
+    random_state: 42
+  feature_importance_threshold: 0.05
+  confidence_threshold: 0.8
+
+feedback_system:
+  user_types:
+    - HR
+    - Candidate
+    - Manager
+    - DEI_Officer
+  feedback_categories:
+    - System_Usability
+    - Decision_Fairness
+    - Transparency
+    - Technical_Issues
+  satisfaction_scale:
+    min: 1
+    max: 5
+  retention_period_days: 365
+
+logging:
+  level: INFO
+  file_path: logs/abdmf.log
+  rotation: "1 day"
+  retention: "30 days"
+
+monitoring:
+  enabled: true
+  metrics:
+    - accuracy
+    - bias_detection
+    - response_time
+    - system_health
+  alert_threshold:
+    accuracy: 0.9
+    bias_detection: 0.85
+    response_time_ms: 500
+
+security:
+  data_encryption: true
+  api_rate_limit: 100
+  max_requests_per_minute: 60
+  require_authentication: true
