@@ -226,12 +226,6 @@ report = system.generate_report()
 - ISO 27001 Certified
 - Annual Third-party Audits
 
-## Getting Help
-
-- Documentation: [docs.abdmf.com](https://docs.abdmf.com)
-- Support: [support@abdmf.com](mailto:support@abdmf.com)
-- Community: [Discord](https://discord.gg/abdmf)
-
 
 ## Citation
 
@@ -239,10 +233,10 @@ If you use ABDMF in your research, please cite:
 ```bibtex
 @software{abdmf2024,
   title={ABDMF: AI Bias Detection and Mitigation Framework},
-  author={Your Team},
+  author={Aayam Bansal, Team Neureka},
   year={2024},
   publisher={GitHub},
-  url={https://github.com/yourusername/abdmf}
+  url={https://github.com/aayambansal/abdmf}
 }
 ```
 
